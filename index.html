@@ -198,22 +198,22 @@
                 <div class="contact-img">
                     <img src="img/contactImage.jpg" alt="Contact image">
                 </div>
-                <form class="contact-form">
+                <form id="contact-form" class="contact-form">
                     <div class="input-group">
                         <i class='bx bx-user'></i>
-                        <input type="text" placeholder="Name*" required>
+                        <input type="text" name="name" placeholder="Your Name*" required>
                     </div>
                     <div class="input-group">
                         <i class='bx bx-envelope'></i>
-                        <input type="email" placeholder="Email*" required>
+                        <input type="email" name="email" placeholder="Your Email*" required>
                     </div>
                     <div class="input-group">
                         <i class='bx bx-phone'></i>
-                        <input type="tel" placeholder="Phone">
+                        <input type="tel" name="phone" pattern="^(\d{10})?$" title="Enter exactly 10 digits or leave empty" placeholder="Phone">
                     </div>
                     <div class="input-group">
                         <i class='bx bx-message-rounded-dots'></i>
-                        <textarea rows="4" placeholder="Message*" required></textarea>
+                        <textarea name="message" rows="4" placeholder="Message*" required></textarea>
                     </div>
                     <button type="submit" class="submit-btn">Submit <i class='bx bx-send'></i></button>
                 </form>
