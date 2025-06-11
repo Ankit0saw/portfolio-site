@@ -602,6 +602,23 @@ footer > div {
 .foot-left{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.foot-left h3 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.foot-left p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+  margin: 0;
+  max-width: 300px;
 }
 
 .foot-mid{
@@ -619,19 +636,37 @@ footer > div {
     }
 }
 
-.foot-right{
-    margin-bottom: 15px;
+.link-items a:hover{
+    font-weight:500;
+    font-size: 1.2rem;
+}
+
+.foot-right{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     .contact-links{
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 10px;
-        margin-top: 10px;
         i{
             margin-bottom: 5px;
             font-size: 1rem;
         }
     }
+    h3{
+        font-size: 1.4rem;
+        margin-bottom: 8px;
+        color: #222;
+    }
+
+}
+
+.contact-links i:hover{
+    font-weight:550;
+    font-size: 1.1rem;
 }
 
 .social-links {
@@ -656,6 +691,10 @@ footer > div {
 
 .social-links i{
     font-size: 1.5rem;
+}
+
+.social-links i:hover{
+    font-size: 2rem;
 }
 
 .end-line {
