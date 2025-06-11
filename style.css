@@ -231,15 +231,73 @@ section {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    transition: .4s;
     border-radius: 50%;
     z-index: 1;
+    transition: all 0.3s ease;
+    overflow: visible;
+    position: relative;
+    text-decoration: none;
 }
 
 
 .social-media a:hover {
-    background: #00abad;
     background: linear-gradient(0deg, rgba(0, 171, 173, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+.social-media a.linkedin:hover::after {
+  content: "LinkedIn";
+  position: absolute;
+  bottom: -30px;
+  font-size: 0.75rem;
+  color: #333;
+  background: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.social-media a.github:hover::after {
+  content: "Github";
+  position: absolute;
+  bottom: -30px;
+  font-size: 0.75rem;
+  color: #333;
+  background: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.social-media a.instagram:hover::after {
+  content: "Instagram";
+  position: absolute;
+  bottom: -30px;
+  font-size: 0.75rem;
+  color: #333;
+  background: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.social-media a.twitter:hover::after {
+  content: "Twitter";
+  position: absolute;
+  bottom: -30px;
+  font-size: 0.75rem;
+  color: #333;
+  background: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+  white-space: nowrap;
+  transition: all 0.3s ease;
 }
 
 .bg-icon {
