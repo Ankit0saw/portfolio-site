@@ -398,7 +398,8 @@ section {
 
 .education{
     background-color:#e0e0e0;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     scroll-margin-top: 50px;
 }
 
@@ -914,4 +915,29 @@ footer > div {
         flex-wrap: wrap;
     }
 
+}
+
+@media (max-width: 576px) { 
+    .text-animate h2 {
+        font-size: 1.2rem;
+    }
+    .all-edu{
+        padding: 5px;
+        width: 100%; 
+        box-sizing: border-box; 
+        max-width: 100%;            /* Prevent child elements from overflowing */
+        flex-wrap: wrap;         
+        word-wrap: break-word;
+        margin-left: -10px;
+        display: flex;
+        flex-direction: row;
+    }
+    .bachelors, .masters {
+        font-size: 0.6rem; 
+        padding-right: 10px;
+    }
+    .bachelors p,
+    .masters p {
+        font-size: 0.6rem;
+    }
 }
