@@ -859,8 +859,9 @@ footer > div {
         display: contents; /* optional but helps ensure proper stacking */
     }
     
-    .img-hero {
+    .dp {
         margin-top: 2em;
+        margin-left: -10px;
     }
   
     .btn-box {

@@ -71,3 +71,27 @@ const phrases = [
   
   document.addEventListener("DOMContentLoaded", type);
   
+// for sending message in contact form
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+ e.preventDefault(); // prevent page reload
+
+  const form = e.target;
+  const data = new FormData(form);
+
+  fetch("https://formsubmit.co/ajax/ankitkrrsss@gmail.com", {
+    method: "POST",
+    body: data
+  })
+  .then(response => {
+    if (response.ok) {
+      alert("Message sent successfully!");
+      form.reset(); // Clear the form
+    } else {
+      document.getElementById("status-msg").textContent = "Failed to send message.";
+    }
+  })
+  .catch(error => {
+    document.getElementById("status-msg").textContent = "An error occurred.";
+    console.error(error);
+  });
+});
