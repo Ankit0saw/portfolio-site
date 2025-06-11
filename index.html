@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankit || Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- boxicon css link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <a href="#" class="logo"><span>A</span>nkit</a>
+            <ul class="navlist">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="right-header">
+                <a href="#" class="btn">Let's chat <i class='bx bx-message-dots' ></i></a>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                </div>
+            </div>
+    </header> 
+
+    <section class="home" id="home">
+        <div class="hero-info">
+            <h3>Welcome To my World</h3>
+            <h1>Hi I'm Ankit</h1>
+            <div class="text-animate">
+                <h2>I am into <span id="typed-text"></span></h2>
+            </div>
+
+            <p>Currently pursuing Master's of Computer Application i.e. MCA 
+                from National Institute of Technology Karnataka, Surathkal i.e. NITK</p>
+            <div class="btn-box">
+                <a href="#" class="btn">Hire Me Now ! <i class='bx bx-right-arrow-alt' ></i></a>
+                <a href="#" target="_blank" class="btn d-CV">Download CV <i class='bx bx-download'></i></a>
+            </div> 
+
+            <div class="social-media">
+                <div class="bg-icon">
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <span></span>
+                </div>
+
+                <div class="bg-icon">
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <span></span>
+                </div> 
+
+                <div class="bg-icon">
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <span></span>
+                </div>
+
+                <div class="bg-icon">
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="img-hero">
+            <img src="img/mainDp.png" class="dp" alt="image not found">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="title"><i class='bx  bx-user-circle'></i>  About <span>Me</span></h1>
+        <div class="title-name">
+            <h2>I'm Ankit</h2>
+            <h3>FullStack Developer</h3>
+        </div>
+        <div class="title-details">
+            <p>
+                I am a Full-stack developer based in Mangalore, India.
+                I hold a Bachelor of Science in Information Technology (B.Sc. IT) from RU Ranchi, 
+                and am currently pursuing my Master of Computer Applications (MCA) at NITK Surathkal.
+                I'm passionate about enhancing my coding skills and turning ideas into real-world web applications.
+                I specialize in building dynamic websites and web apps using the MERN stack.
+            </p>
+            <div class="title-contact">
+                <p><a href="#">Email :</a> ankitkrrsss@gmail.com</p>
+                <p><a href="#">Place :</a> Mangalore, India</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <h1  class="title"> <i class='bx  bx-book-bookmark'></i>  Education <span>Details</span></h1>
+        <div class="all-edu">
+            <div class="masters">
+                <img src="img/nitkImage.jpg" alt="NITK image">
+                <div class="college">
+                    <h2>Master of Computer Applications</h2>
+                    <p>Studied at National Institute of Technology Karnataka, Surathkal</p>
+                    <h3>2023-2026 | Pursuing</h3>
+                </div>
+            </div>
+            <div class="bachelors">
+                <img src="img/dcrImage.jpg" alt="DCR image">
+                <div class="college">
+                    <h2> Bachelor of Science in Information Technology</h2>
+                    <p>Studied at Doranda College, Ranchi — affiliated to Ranchi University</p>
+                    <h3>2019-2022 | Completed</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h1  class="title"><i class='bx  bx-laptop'></i> Skills & <span>Abilities</span></h1>
+    </section>
+
+    <section class="project" id="project">
+        <h1  class="title"><i class='bx  bx-trophy'></i>  Projects <span>Made</span></h1>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1  class="title"><i class='bx  bx-message-edit'  ></i> Get in <span>touch</span></h1>
+    </section>
+
+    <footer>
+        <div class="foot-left">
+            <h3>Ankit's Portfolio</h3>
+            <p>Thank you for visiting my personal portfolio website. Connect with me Over socials.</p>
+        </div>
+        
+        <div class="foot-mid">
+            <h3>Quick Links</h3>
+            <div class="link-items">
+                <a href="#"><i class="bx bx-right-arrow-alt">Home</i></a>
+                <a href="#"><i class="bx bx-right-arrow-alt">About</i></a>
+                <a href="#"><i class="bx bx-right-arrow-alt">Education</i></a>
+                <a href="#"><i class="bx bx-right-arrow-alt">Skills</i></a>
+                <a href="#"><i class="bx bx-right-arrow-alt">Project</i></a>
+                <a href="#"><i class="bx bx-right-arrow-alt">Contact</i></a>
+            </div>
+        </div>
+
+        <div class="foot-right">
+            <h3>Contact Info</h3>
+            <div class="contact-links">
+                <i class='bx bx-phone'> +91 87xx31xxxx</i> 
+                <i class='bx bx-envelope'> ankitkrrsss@gmail.com</i> 
+                <i class='bx bx-map'> Mangalore, India-575025</i>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="end-line">
+        <p>Crafted with ❤️ + lots of ☕</p>
+        <p>© 2025 Ankit. All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
