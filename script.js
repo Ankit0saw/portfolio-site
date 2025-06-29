@@ -87,11 +87,11 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
       alert("Message sent successfully!");
       form.reset(); // Clear the form
     } else {
-      document.getElementById("status-msg").textContent = "Failed to send message.";
+      alert("Failed to send message.");
     }
   })
   .catch(error => {
-    document.getElementById("status-msg").textContent = "An error occurred.";
+    alert("An error occurred. Please try again later.");
     console.error(error);
   });
 });

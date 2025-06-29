@@ -17,6 +17,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #e3edf7;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /* === Header === */
@@ -63,10 +64,10 @@ ul.navlist {
 
 .navlist li a:hover,
 .navlist li a.active {
-    background: #00abad;
     background: linear-gradient(0deg, rgba(0, 171, 173, 1) 0%, rgba(253, 187, 45, 1) 100%);
-    color: transparent;
     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* Optional fallback */
 }
 
 .right-header {
